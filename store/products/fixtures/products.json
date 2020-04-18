@@ -1,0 +1,50 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "Jacket",
+        "description": "Winter Polar Jacket",
+        "price": "35.00",
+        "created": "2020-03-30T16:28:01.671Z",
+        "slug": "jacket",
+        "image": "products/jacket__R9CtkJE.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "T-Shirt",
+        "description": "100 % cotton",
+        "price": "15.00",
+        "created": "2020-03-30T16:28:18.273Z",
+        "slug": "t-shirt",
+        "image": "products/shirt-png-23754_WA8uYHl.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Jacket Light",
+        "description": "Jacket Light for rain",
+        "price": "30.00",
+        "created": "2020-03-30T17:37:31.397Z",
+        "slug": "jacket-light",
+        "image": "products/516JGReB48L._SX38_SY50_CR003850_.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "Sunglasses",
+        "description": "filter UV polarized",
+        "price": "80.00",
+        "created": "2020-03-31T08:37:27.976Z",
+        "slug": "sunglasses",
+        "image": "products/sunglasses.png"
+    }
+}
+]

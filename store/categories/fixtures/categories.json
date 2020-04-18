@@ -1,0 +1,28 @@
+[
+{
+    "model": "categories.category",
+    "pk": 1,
+    "fields": {
+        "title": "Clothes",
+        "description": "everything you dress",
+        "created": "2020-03-31T07:49:39.590Z",
+        "products": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 2,
+    "fields": {
+        "title": "Accesories",
+        "description": "Accesories",
+        "created": "2020-03-31T07:49:52.473Z",
+        "products": [
+            4
+        ]
+    }
+}
+]

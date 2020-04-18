@@ -1,0 +1,23 @@
+<div class="card">
+    <h5 class="card-header"></h5>
+    <div class="card-body">
+        <h5 class="card-title">{{ shipping_address.address}}</h5>
+        <div class="card-title">
+            {{ shipping_address.reference }}
+        </div>
+        <div class="card-title">
+            {{ shipping_address.zip_code }}
+        </div>
+        {% if edit %}
+            <div class="mt-2">
+                <a href="{% url 'shipping_addresses:edit' shipping_address.pk %}" class="btn btn-info">Edit</a>
+                {% if shipping_address.principal %}
+                    Principal address
+                {% else %}
+                    <a href="{% url 'shipping_addresses:principal' shipping_address.pk %}" class="btn btn-warning">Make as principal</a>
+                    <a href="{% url 'shipping_addresses:delete' shipping_address.pk %}" class="btn btn-danger">Delete</a>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</div>

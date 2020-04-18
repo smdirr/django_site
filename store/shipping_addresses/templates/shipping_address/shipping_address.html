@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="col">
+        <div class="h3">
+            Addresses
+        </div>
+        <a href="{% url 'shipping_addresses:create' %}">Add new address</a>
+        <div class="mt-2">
+            {% for shipping_address in object_list %}
+                <div class="mt-2">
+                    {% include 'shipping_address/snippets/shipping_address.html' with edit=True %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

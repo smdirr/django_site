@@ -1,0 +1,28 @@
+<form action="{% url 'cartshop:add' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    <div class="">
+        <button type="button" class="btn btn-info d-inline" id="btnLess">-</button>
+        <input type="number" id="quantity" value="1" name="quantity" class="form-control col-sm-1 d-inline" readonly>
+        <button type="button" class="btn btn-info d-inline" id="btnMore">+</button>
+    </div>
+    <div class="mt-2">
+        <button type="submit" class="btn btn-warning">Add to cart</button>
+    </div>
+</form>
+
+<script>
+    const more = document.getElementById('btnMore');
+    const less = document.getElementById('btnLess');
+    const quantity = document.getElementById('quantity');
+
+    less.addEventListener('click', function(){
+        if (quantity.value > 1) {
+            quantity.value = parseInt(quantity.value) - 1
+        }
+    })
+
+    more.addEventListener('click', function(){
+        quantity.value = parseInt(quantity.value) + 1
+    })
+</script>
